@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de Nomes</title>
+</head>
+<body>
+    <script>
+        var quantidadeNomes = prompt("Digite a quantidade de nomes:");
+        quantidadeNomes = parseInt(quantidadeNomes);
+    
+        var nomes = [];
+    
+        for (var i = 0; i < quantidadeNomes; i++) {
+            var nome = prompt("Digite o nome " + (i + 1) + ":");
+            nomes.push(nome);
+        }
+    
+        alert(
+            "Quantidade de nomes digitados: " + nomes.length + "\n" +
+            "Nomes na ordem em que foram digitados: " + nomes.join(", ") + "\n" +
+            "Nomes na ordem alfabética: " + nomes.sort().join(", ") + "\n" +
+            "Nomes em Maiúsculo: " + nomes.map(function(nome) { return nome.toUpperCase(); }).join(", ")
+        );
+    </script>
+</body>
+</html>

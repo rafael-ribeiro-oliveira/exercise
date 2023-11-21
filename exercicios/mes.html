@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Mês por Extenso</title>
+</head>
+<body>
+    
+    <script>
+        var meses = [
+            "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+            "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+        ];
+    
+        var numeroMes = prompt("Digite o número do mês (1 a 12):");
+        numeroMes = parseInt(numeroMes);
+    
+        if (numeroMes >= 1 && numeroMes <= 12) {
+            var nomeMes = meses[numeroMes - 1];
+            alert("Número: " + numeroMes + " - Mês: " + nomeMes);
+        } else {
+            alert("Número inválido. Digite um número entre 1 e 12.");
+        }
+    </script>
+    
+</body>
+</html>
